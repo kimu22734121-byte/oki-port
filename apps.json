@@ -1,4 +1,9 @@
 {
+  "github": "kimu22734121-byte",
+  "ignore": [
+    "oki-port"
+  ],
+  "hidden": [],
   "apps": [
     {
       "id": "oki-tube",
