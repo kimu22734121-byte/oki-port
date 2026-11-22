@@ -22,7 +22,7 @@
 ## 公開（GitHub Pages）
 リポジトリの **Settings → Pages → Build and deployment** で
 Source: `Deploy from a branch` / Branch: `main` / `/ (root)` を選んで保存。
-公開URL: `https://kimu22734121-byte.github.io/oki-port/`
+公開URL: https://kimu22734121-byte.github.io/oki-port/
 
 ## ホーム画面に追加
 - iPhone（Safari）: 共有ボタン → 「ホーム画面に追加」
@@ -33,3 +33,5 @@ Source: `Deploy from a branch` / Branch: `main` / `/ (root)` を選んで保存�
 - ★ お気に入りは一番上に固定、再タップで元の位置へ（`localStorage` に保存）
 - 共有ボタンは Web Share API、非対応のブラウザではURLをコピー
 - ビルド不要の静的サイト（HTML / CSS / JS のみ）
+
+公開URL: https://kimu22734121-byte.github.io/oki-port/
