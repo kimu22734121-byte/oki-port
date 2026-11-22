@@ -9,14 +9,14 @@
     },
     {
       "id": "rock-on",
-      "name": "ロックオン",
+      "name": "rock-on",
       "desc": "録音して、文字起こし・議事録にまとめる",
       "url": "https://kimu22734121-byte.github.io/rock-on/",
       "icon": "icons/rock-on.svg"
     },
     {
       "id": "laptimer",
-      "name": "マイコンカー ラップタイマー",
+      "name": "Laptimer",
       "desc": "カメラで車の通過を検知してラップを計測",
       "url": "https://kimu22734121-byte.github.io/Laptimer/",
       "icon": "icons/laptimer.svg"
