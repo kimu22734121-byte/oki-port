@@ -1,0 +1,33 @@
+{
+  "apps": [
+    {
+      "id": "oki-tube",
+      "name": "oki-tube",
+      "desc": "YouTubeプレイリストを連続再生",
+      "url": "https://kimu22734121-byte.github.io/oki-tube/",
+      "icon": "icons/oki-tube.svg"
+    },
+    {
+      "id": "rock-on",
+      "name": "ロックオン",
+      "desc": "ワンタップで録音できるアプリ",
+      "url": "https://kimu22734121-byte.github.io/rock-on/",
+      "icon": "icons/rock-on.svg"
+    },
+    {
+      "id": "laptimer",
+      "name": "ラップタイマー",
+      "desc": "タイムを測って記録するタイマー",
+      "url": "https://kimu22734121-byte.github.io/Laptimer/",
+      "icon": "icons/laptimer.svg"
+    },
+    {
+      "id": "maicon-car",
+      "name": "マイコンカー",
+      "desc": "マイコンカー関連のアプリ",
+      "url": "",
+      "icon": "icons/maicon-car.svg",
+      "comingSoon": true
+    }
+  ]
+}

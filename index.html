@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>oki-port</title>
+  <meta name="description" content="自作Webアプリのランチャー">
+  <meta name="theme-color" content="#4a63d8">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/launcher.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="oki-port">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+  <main class="wrap">
+    <header class="head">
+      <img src="icons/launcher.svg" alt="" width="44" height="44">
+      <div>
+        <h1>oki-port</h1>
+        <p>じぶんのアプリの港</p>
+      </div>
+    </header>
+    <ul id="list" class="list" aria-live="polite"></ul>
+    <p id="msg" class="msg" hidden></p>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
