@@ -20,14 +20,6 @@
       "desc": "タイムを測って記録するタイマー",
       "url": "https://kimu22734121-byte.github.io/Laptimer/",
       "icon": "icons/laptimer.svg"
-    },
-    {
-      "id": "maicon-car",
-      "name": "マイコンカー",
-      "desc": "マイコンカー関連のアプリ",
-      "url": "",
-      "icon": "icons/maicon-car.svg",
-      "comingSoon": true
     }
   ]
 }
