@@ -26,25 +26,6 @@
   }
   const lc = s => String(s || '').toLowerCase();
 
-  // 専用アイコンがないアプリ用：名前から色と頭文字を決めて、ネオン風アイコンを自動生成
-  function autoIcon(name) {
-    let h = 0;
-    for (const ch of String(name)) h = (h * 31 + ch.codePointAt(0)) % 360;
-    const neon = `hsl(${h},100%,72%)`;
-    const c1 = `hsl(${222 + (h % 24)},62%,27%)`, c2 = `hsl(${262 + (h % 20)},58%,38%)`;   // 下地は紺〜紫に固定
-    const letter = ([...String(name).trim()][0] || '?').toUpperCase().replace(/&/g, '&amp;').replace(/</g, '&lt;');
-    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><defs>` +
-      `<linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></linearGradient>` +
-      `<filter id="g" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3" result="x"/><feMerge><feMergeNode in="x"/><feMergeNode in="x"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>` +
-      `<rect width="120" height="120" rx="27" fill="url(#b)"/>` +
-      `<rect x="1.5" y="1.5" width="117" height="117" rx="25.5" fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="1.5"/>` +
-      `<g filter="url(#g)" fill="none" stroke="${neon}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">` +
-      `<circle cx="60" cy="60" r="36"/></g>` +
-      `<text x="60" y="61" text-anchor="middle" dominant-baseline="central" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="44" font-weight="700" fill="${neon}" filter="url(#g)">${letter}</text></svg>`;
-    return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
-  }
-
-  /* ---------- 一覧の組み立て ---------- */
   // 手動(apps.json) → 自動(GitHub Pagesを公開しているリポジトリ) の順。手動が同名なら上書き。
   function build() {
     const ignore = new Set(cfg.ignore.map(lc));
@@ -55,7 +36,7 @@
       .sort((a, b) => (b.pushed_at || '').localeCompare(a.pushed_at || ''))
       .map(r => ({
         id: lc(r.name), name: r.name, desc: r.description || '',
-        url: `https://${lc(cfg.github)}.github.io/${r.name}/`, icon: autoIcon(r.name), auto: true
+        url: `https://${lc(cfg.github)}.github.io/${r.name}/`, icon: window.OkiIcons.make(r.name, r.description), auto: true
       }));
     return [...manual, ...auto].filter(a => !ignore.has(a.id));
   }
