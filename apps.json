@@ -25,6 +25,27 @@
       "desc": "カメラで車の通過を検知してラップを計測",
       "url": "https://kimu22734121-byte.github.io/Laptimer/",
       "icon": "icons/laptimer.svg"
+    },
+    {
+      "id": "midi-studio-changer",
+      "name": "midi-studio-changer",
+      "desc": "好きな曲を打ち込み音楽（MIDI）に変換して再生",
+      "url": "https://kimu22734121-byte.github.io/midi-studio-changer/",
+      "icon": "icons/midi-studio-changer.svg"
+    },
+    {
+      "id": "alpha-max",
+      "name": "alpha-max",
+      "desc": "宇宙を舞台にしたターン制RPG",
+      "url": "https://kimu22734121-byte.github.io/alpha-max/",
+      "icon": "icons/alpha-max.svg"
+    },
+    {
+      "id": "galaxy-war",
+      "name": "Galaxy-War",
+      "desc": "ロボット部隊を指揮するヘックス戦略ゲーム",
+      "url": "https://kimu22734121-byte.github.io/Galaxy-War/",
+      "icon": "icons/galaxy-war.svg"
     }
   ]
 }
